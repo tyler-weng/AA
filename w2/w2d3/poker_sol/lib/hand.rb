@@ -19,7 +19,8 @@ class Hand
     @cards += new_cards
   end
 
-  def self.winner(hands) 
+  def self.winner(hands)
+    hands.sort{ |h1, h2| h1.rank <=> h2.rank }.last
   end
 
 

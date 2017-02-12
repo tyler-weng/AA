@@ -210,6 +210,8 @@ def expensive_tastes
           albums.asin AS atitle, COUNT(DISTINCT(tracks.song)) AS acount
         FROM
           tracks
+        WHERE
+          albums.price IS NOT NULL
         JOIN
           albums ON tracks.album = albums.asin
         GROUP BY

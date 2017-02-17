@@ -1,0 +1,8 @@
+<h1>Bands</h1>
+<% @bands.each do |band| %>
+  <%= band.name %>
+  <form action="<%= band.url %>">
+    <input type="submit" value="Homepage"/>
+    <br>
+  </form>
+<% end %>

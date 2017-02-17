@@ -1,0 +1,14 @@
+<h1><%= @track.name %></h1>
+
+<h2>Lyrics</h2>
+<p>
+  <%= ugly_lyrics(@track.lyrics) %>
+</p>
+
+
+<%= render "notes/form", track: @track %>
+
+<h2>Notes</h2>
+<% @track.notes.each do |note| %>
+  <%= render "notes/note", note: note %>
+<% end %>

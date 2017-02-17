@@ -1,0 +1,8 @@
+<h1><%= @album.name %></h1>
+
+<h2>Tracks</h2>
+<% @album.tracks.each do |track| %>
+  <p>
+    <%= "#{track.ord}: #{track.name}" %>
+  </p>
+<% end %>

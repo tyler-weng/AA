@@ -1,0 +1,16 @@
+<img
+  src="http://cowgernation.com/wp-content/uploads/2016/03/Trump-1.jpg"
+  alt="MAGA"
+  style="width:250px;height:128px;"
+>
+<!-- <%#= ApplicationController.retrieve_tweets! %> -->
+
+<h1>The Donald</h1>
+<% @entries_arr.each do |entry| %>
+  <p>
+    <% link = (entry.link[0..1] == "/r" ?
+                                   "https://www.reddit.com" + entry.link :
+                                   entry.link ) %>
+    <a href="<%= link %>"><%= entry.title %></a>
+  </p>
+<% end %>

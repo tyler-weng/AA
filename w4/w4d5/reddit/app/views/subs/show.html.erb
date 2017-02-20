@@ -1,0 +1,8 @@
+<h1>Profile Page!</h1>
+
+<h2><%= @sub.title %></h2>
+<p>Description: <%= @sub.description %></p>
+
+<% @sub.posts.each do |post| %>
+  <%= post.title %>
+<% end %>

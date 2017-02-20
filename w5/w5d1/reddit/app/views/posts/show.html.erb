@@ -1,0 +1,13 @@
+<h1>Show Post</h1>
+
+<h2><%= @post.title %></h2>
+<ul>
+  <li>Content: <%= @post.content %></li>
+  <li>Author: <%= User.find_by(id: @post.author_id).username %></li>
+  <li>Url: <%= @post.url %></li>
+  <br>
+  <ul><% @post.comments.each do |comment| %>
+    <li><%= comment.content %></li>
+  </ul>
+  <% end %>
+</ul>

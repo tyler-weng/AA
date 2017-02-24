@@ -7,7 +7,7 @@ function isSubstring(searchString, subString) {
 }
 
 function fizzBuzz(array) {
-  array.filter(fizzBuzzable)
+  return array.filter(fizzBuzzable)
 }
 
 function fizzBuzzable(n) {
@@ -76,7 +76,7 @@ class Elephant {
   }
 
   paradeHelper(elephant) {
-    
+
   }
 }
 

@@ -1,0 +1,43 @@
+ul {
+  width: 300px;
+  list-style: none;
+}
+
+
+li {
+
+  background-color: gray;
+  float: left;
+  width: 90px;
+  height: 90px;
+  border: 5px solid black;
+  display: inline-block;
+  font-size: 90px;
+  text-align: center;
+}
+
+
+li:hover{
+  background-color: yellow;
+}
+
+li[mark="x"] {
+  background-color: white;
+  color: red;
+}
+
+li[mark="o"] {
+  background-color: white;
+  color: blue;
+}
+
+
+
+
+
+
+/*.group:after {
+content: "";
+display: block;
+clear: both;
+}*/

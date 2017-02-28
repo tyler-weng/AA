@@ -1,0 +1,54 @@
+figure, ul, li {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+figure {
+  width: 600px;
+}
+
+ul {
+  width: 180px;
+  border-bottom: 5px black solid;
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: bottom;
+
+}
+
+ul:hover {
+  border-color: blue;
+}
+
+ul.clicked {
+  border-bottom: 5px green solid;
+}
+
+li{
+  text-align: center;
+
+}
+
+li[weight="3"] {
+
+  font-size: 80px;
+}
+
+li[weight="2"] {
+
+  font-size: 40px;
+}
+
+li[weight="1"] {
+
+  font-size: 20px;
+}
+
+h1{
+  display: inline-block;
+  text-align: justify;
+}

@@ -1,0 +1,58 @@
+.tab-headers {
+  font-weight: bold;
+}
+
+.tabs {
+  display: block;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.tab-headers {
+  display: flex;
+  flex-direction: row;
+  background-color: cornflowerblue;
+}
+
+.tab-header {
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+.tab-header:hover {
+  cursor: pointer;
+  background-color: darkgray;
+}
+
+.tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: wheat;
+}
+
+.tab-content article {
+  text-align: center;
+}
+
+.clock {
+  border: 1.5px solid black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-image: url("http://media.gettyimages.com/videos/black-clocks-flying-loopable-video-id166068195?s=640x640");
+}
+
+.clock-headers {
+  flex-direction: column;
+}
+
+.clock-data {
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
